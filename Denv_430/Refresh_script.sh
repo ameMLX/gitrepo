@@ -3,6 +3,7 @@
 #===========================================================================
 # Refresh script to deploy a new server - Release 4.3.0
 # Also to deploy a stand alone cadence version a FDK or design environment
+# The script clean also the rpm packages installed on test but not installed on production
 #===========================================================================
 
 # set the mail logfile
