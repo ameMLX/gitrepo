@@ -1,5 +1,9 @@
 #! /bin/csh -f
 
+#=============================================================
+# Refresh script to deploy a new server - Release 4.3.0
+# Also to deploy a stand alone cadence version or a PDK
+#=============================================================
 
 # set the mail logfile
 setenv logfile /tmp/cad_deployment_`hostname -a`.log
