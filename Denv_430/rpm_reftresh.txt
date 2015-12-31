@@ -32,11 +32,3 @@ List which RPMs which will be erased, without actually erasing them:
 rpm -e --test -vv $(cat file3b) 2>&1 | grep '^D:     erase:'
 rpm -e $(cat file3b)
 for i in `cat file3b` ; do rpm -e $i; done
-
-
-copy file from
-linsof09.sofia.elex.be
-/home/ame/file1
-to
-linsof-test.sofia.elex.be
-/home/ame/projects/Denv_430R
