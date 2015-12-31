@@ -656,8 +656,9 @@ set dssrsynclog = /tmp/rsynclogs/dss/dssrsync.log
 echo " Start synchronizing the DSS environment." | tee -a $logfile
 cd $dmsoftloc
 rsync -avz --force --delete $dmsoftprod/ $dmsoftloc/ > $dssrsynclog
-echo -n " DSS environment deployed! Press any key to continue ... " | tee -a $logfile
-set answer = $<
+#echo -n " DSS environment deployed! Press any key to continue ... " | tee -a $logfile
+echo -n " DSS environment deployed!!!" | tee -a $logfile
+#set answer = $<
 TRI:
 clear
 echo "--------------------------------------------------------------------------" | tee -a $logfile
