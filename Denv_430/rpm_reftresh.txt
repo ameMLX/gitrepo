@@ -39,18 +39,17 @@ As first step we need to create a file with all rpm packages installed on the se
 rpm -qa > file1 (production server)
 rpm -qa > file2 (test server)
 
-The files have to be first sorted using the following commands
+Then the files have to be sorted using the following commands
 
 sort file1 > file1a
 sort file2 > file2a
 
-Then compare line by line both files to get the differences
+After be sorted need to be compare line by line both files to get the differences as described belllow
 
 comm -2 -3 file1a file2a > file3a (packages only present on production server)
-
 comm -1 -3 file1a file2a > file3b (Packages only present on test server)
 
-First test completed with success
+
 
 
 
