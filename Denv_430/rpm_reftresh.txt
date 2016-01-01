@@ -34,6 +34,11 @@ rpm -e $(cat file3b)
 for i in `cat file3b` ; do rpm -e $i; done
 
 
+As first step we need to create a file with all rpm packages installed on the servers using the commnads described bellow
+
+rpm -qa > file1 (production server)
+rpm -qa > file2 (test server)
+
 The files have to be first sorted using the following commands
 
 sort file1 > file1a
